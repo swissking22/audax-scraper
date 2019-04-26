@@ -20,7 +20,7 @@ weather_prop_row_values = []
 
 for row in weather_prop_row: 
     # stores row header names in array
-    weather_prop_row_header.append(row.find('th').text.strip())
+    weather_prop_row_header.append((row.th).text.strip())
     weather_prop_row_values.append((row.td.span).text.strip())
 
 weather_set = dict(zip(weather_prop_row_header, weather_prop_row_values))
