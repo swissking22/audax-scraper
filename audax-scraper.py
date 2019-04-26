@@ -25,4 +25,8 @@ for row in weather_prop_row:
 
 weather_set = dict(zip(weather_prop_row_header, weather_prop_row_values))
 
-print(weather_set)
+filename = 'weather_stats.json'
+
+with open(filename, 'w') as fp:
+    conv = json.dumps(weather_set, indent=4)
+    print(conv, file=fp)
