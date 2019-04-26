@@ -5,6 +5,7 @@
 
 import requests
 from bs4 import BeautifulSoup
+import json
 
 scrape_url = "https://weather.com/weather/today/l/CMXX0008:1:CM"
 
